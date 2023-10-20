@@ -1,0 +1,69 @@
+/* Defina o estilo básico para a página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #9840ae;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.zoom-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.zoom-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.caption-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.caption {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.back-button {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #b100ae;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.back-button:hover {
+  background-color: #005183;
+}
